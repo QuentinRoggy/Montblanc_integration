@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+@font-face {
+  font-family: "druke wide";
+  src: url("../Fonts/Druk\ Wide\ Bold.ttf");
+}
+
+
+body {
+  background-color: #030303;
+  color: white;
+  padding: 2rem;
+  font-family: "druke wide";
+  font-size: calc(15px + 0.390625vw);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo__container {
+  background: no-repeat left url("../images/logo.png");
+  background-size: contain;
+  width: 18%;
+  height: 2.5rem;
+}
+
+.nav__container {
+  width: 45%;
+  transform: translateY(5px)
+}
+
+.nav__container__list {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+main {
+  background-color: #030303;
+  height: 80%;
+}
+
+.list__item__link {
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.list__item__link:hover {
+  text-decoration: underline;
+}
+
+.gold__container {
+  background-image: url("../images/Gold.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28%;
+  height: 35%;
+  
+}
+.bike__container {
+  width: 45%;
+  height: 45rem;
+  background: no-repeat left url("../images/image 3.png");
+  background-size: contain;
+  z-index: 10;
+}
+
+.wheel__container {
+  background: no-repeat center url("../images/MONTBLANC\ MOTORCYCLE.png");
+  background-size: contain;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  left: 46%;
+  top: 20%;
+  animation: rotate 15s linear infinite;
+}
+
+.motorbike-light__container {
+  background: no-repeat center url("../images/photo 2.png");
+  background-size: contain;
+  width: 30%;
+  height: 60%;
+  position: absolute;
+  left: 60%;
+  top: 18%;
+}
+
+.aside__container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 15%;
+  height: 60%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #050406;
+  z-index: 100;
+}
+
+.aside__item {
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.aside-left {
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.aside-right {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.aside__item__data {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.aside__item__description {
+  font-size: 0.6rem;
+  font-family: "Montserrat";
+}
+
+.vector {
+  background: no-repeat center url("../images/VECTOR.png");
+  background-size: cover;
+  width: 85%;
+  height: 7rem;
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+}
+
+.description {
+  position: absolute;
+  width: 22%;
+  left: 40%;
+  bottom: 20px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 200%;
+  /* or 24px */
+
+  display: flex;
+  align-items: center;
+
+}
+
+.motorbike-seat__container {
+  background: no-repeat center url("../images/photo\ 3.png");
+  background-size: contain;
+  width: 40%;
+  height: 10rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
