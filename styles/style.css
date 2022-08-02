@@ -60,14 +60,23 @@ main {
   right: 0;
   width: 28%;
   height: 35%;
-  
 }
+
+.black-box {
+  width: 40%;
+  height: 50%;
+  background: black;
+  position: absolute;
+  bottom: 0;
+}
+
 .bike__container {
   width: 45%;
   height: 45rem;
   background: no-repeat left url("../images/image 3.png");
   background-size: contain;
   z-index: 10;
+  animation: fadeIn 5s;
 }
 
 .wheel__container {
@@ -78,7 +87,7 @@ main {
   position: absolute;
   left: 46%;
   top: 20%;
-  animation: rotate 15s linear infinite;
+  animation: rotate 20s linear infinite;
 }
 
 .motorbike-light__container {
@@ -89,6 +98,7 @@ main {
   position: absolute;
   left: 60%;
   top: 18%;
+  animation: fadeIn 5s;
 }
 
 .aside__container {
@@ -104,6 +114,7 @@ main {
   right: 0px;
   background-color: #050406;
   z-index: 100;
+  animation: fadeIn 5s;
 }
 
 .aside__item {
@@ -152,21 +163,54 @@ main {
   position: absolute;
   bottom: 20%;
   left: 0;
+  animation: fadeIn 5s;
+}
+
+.footer {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scrollbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+
+.start__scrollbar::before {
+  content: "<";
+  margin-right: 20px;
+}
+
+.middle__scrollbar {
+  width: 50%;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #A75B12 65%, #ffffff 35%);
+}
+
+
+.end__scrollbar::after {
+  content: ">";
+  margin-left: 20px;
+}
+
+.description__container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .description {
-  position: absolute;
-  width: 22%;
-  left: 40%;
-  bottom: 20px;
-
+  width: 100%;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 200%;
-  /* or 24px */
-
   display: flex;
   align-items: center;
 
@@ -175,15 +219,23 @@ main {
 .motorbike-seat__container {
   background: no-repeat center url("../images/photo\ 3.png");
   background-size: contain;
-  width: 40%;
-  height: 10rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  width: 10%;
+  height: 7rem;
 }
 
 @keyframes rotate {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
