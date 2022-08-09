@@ -1,7 +1,23 @@
 # Montblanc_integration
 
 Integration work based on Figma template.
+Responsive is not created for yet.
 
-Figma template provided by @Benjamin_Code
+## Technologies used
 
-[Lien vers la maquette](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkFUNWE0OVMzSlVhX3FSXzVBemczSmN1OC1YUXxBQ3Jtc0tra2Nsb2VreHNTRkNfNEdBR0lxVThtZmgydGRncUUwcG9DMWJRS0VWNVp6djVrWmFIc2RTTGRZSjhzQVVIV3NCTXZteXBaMEVaZjFJTENOOE4wM0lVTWF4OF9mN1lUNjFVbDN5LUduMk5PUDludzNXYw&q=https%3A%2F%2Fwww.dropbox.com%2Fs%2F702q5xoq143otrf%2FMontblanc%2520-%2520Motorcycle%2520website%2520concept%2520design.fig%3Fdl%3D0&v=9dZmMPcaNIs)
+<p align="left"> 
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
+<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
+
+
+## Result
+
+![result](./images/Result.png)
+
+You can try it here : [link to the website](https://quentinroggy.github.io/Montblanc_integration/)
+
+## Template
+
+Figma template provided by [@Benjamin_Code](https://www.youtube.com/c/BenjaminCode/featured)
+
+[Lien vers la maquette](https://www.figma.com/file/TkRfqae1HAzJOTYRRNtq79/Montblanc---Motorcycle-website-concept-design?node-id=0%3A1)

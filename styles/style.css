@@ -5,16 +5,22 @@
   src: url("../Fonts/Druk\ Wide\ Bold.ttf");
 }
 
+*{
+  overflow: hidden;
+}
+
 
 body {
-  background-color: #030303;
+  background-color: #060507;
   color: white;
-  padding: 2rem;
+  height: 100vh;
   font-family: "druke wide";
   font-size: calc(15px + 0.390625vw);
 }
 
 .header__container {
+  width: 95%;
+  margin: 20px auto;
   display: flex;
   align-items: center;
 }
@@ -27,18 +33,22 @@ body {
 }
 
 .nav__container {
-  width: 45%;
+  width: 54%;
   transform: translateY(5px)
 }
 
 .nav__container__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-transform: uppercase;
 }
+
 main {
-  background-color: #030303;
-  height: 80%;
+  background-color: #060507;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .list__item__link {
@@ -65,21 +75,22 @@ main {
 .black-box {
   width: 40%;
   height: 50%;
-  background: black;
+  background: #060507;
   position: absolute;
   bottom: 0;
 }
 
 .bike__container {
   width: 45%;
-  height: 45rem;
+  height: auto;
   background: no-repeat left url("../images/image 3.png");
   background-size: contain;
-  z-index: 10;
+  background-color: #060507;
   animation: fadeIn 5s;
 }
 
 .wheel__container {
+  
   background: no-repeat center url("../images/MONTBLANC\ MOTORCYCLE.png");
   background-size: contain;
   width: 20%;
@@ -112,9 +123,9 @@ main {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  background-color: #050406;
+  background-color: #060507;
   z-index: 100;
-  animation: fadeIn 5s;
+  animation: fadeIn 2s ease-in;
 }
 
 .aside__item {
@@ -130,7 +141,7 @@ main {
   width: 20%;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  font-size: 0.8rem;
+  font-size: .9vw;
   text-transform: uppercase;
   text-align: center;
   opacity: 0.3;
@@ -146,12 +157,12 @@ main {
 }
 
 .aside__item__data {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   margin: 20px 0;
 }
 
 .aside__item__description {
-  font-size: 0.6rem;
+  font-size: 0.8vw;
   font-family: "Montserrat";
 }
 
@@ -163,11 +174,12 @@ main {
   position: absolute;
   bottom: 20%;
   left: 0;
-  animation: fadeIn 5s;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .footer {
-  width: 85%;
+  margin-left: 20px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -198,7 +210,7 @@ main {
 }
 
 .description__container {
-  width: 30%;
+  width: 45%;
   display: flex;
   align-items: center;
   align-content: center;
@@ -237,5 +249,12 @@ main {
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bike__container {
+    width: 45%;
+    height: 35vw;
   }
 }
